@@ -36,7 +36,7 @@ composer require aloko/nova-persian-datepicker
 
 To use these fields, you add the following to your resource's `fields()` method:
 
-```
+```php
 use Aloko\PersianDatepicker\PersianDate;
 use Aloko\PersianDatepicker\PersianDateTime;
 
@@ -49,11 +49,11 @@ PersianDateTime::make('check_in') // For datetime fields
 
 ## Methods
 
-You can use `format()` method as below to alter the way dates are displayed. Please note that `format` string must match the standard explained in Babakhani Persian Date [format docs](http://babakhani.github.io/PersianWebToolkit/doc/persian-date#format)
+You can use `format()` method as below to alter the way dates are displayed. Please note that `format` string must match the standard explained in Babakhani Persian Date [format docs](http://babakhani.github.io/PersianWebToolkit/doc/persian-date#format).
 
-```
+```php
 
-PersianDate::make('date_of_birth')->format('YYYY-MMMM-DD'), // This will print something like: ۲۸-اسفند-۱۳۹۷
+PersianDate::make('date_of_birth')->format('YYYY-MM'), // This will only print year and month
 PersianDateTime::make('check_in')->format('hh:mm') // This will only show hours and minutes
 ```
 
