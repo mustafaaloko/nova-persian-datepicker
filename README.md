@@ -27,7 +27,7 @@ PersianDateTime::make('check_in') // For datetime fields
 
 ## How it Works
 
-Under the hood, this package uses the awsome [Babakhani Datepicker](http://babakhani.github.io/PersianWebToolkit/doc/datepicker/) library. Below screenshots are some samples of how this package works.
+Under the hood, this package uses the awesome [Babakhani Datepicker](http://babakhani.github.io/PersianWebToolkit/doc/datepicker/) library. Below screenshots are some samples of how this package works.
 
 ### Screenshots
 
