@@ -5,6 +5,25 @@ Laravel Nova Persian Datepicker
 
 This package adds flexibility to work with Persian/Jalali dates in Laravel Nova resources. It provides two fields, `PersianDate` and `PersianDateTime`.
 
+## Installation and Usage
+
+You may require this package using composer:
+
+```
+composer require aloko/nova-persian-datepicker
+```
+
+To use these fields, you add the following to your resource's `fields()` method:
+
+```php
+use Aloko\PersianDatepicker\PersianDate;
+use Aloko\PersianDatepicker\PersianDateTime;
+
+PersianDate::make('date_of_birth'), // For date fields
+PersianDateTime::make('check_in') // For datetime fields
+```
+
+**NOTE:** Please don't forget to cast your `date` and `datetime` fields in your model class as explained in [Attribute Casting](https://laravel.com/docs/eloquent-mutators#attribute-casting) in Laravel Docs, otherwise these fields will throw casting error.
 
 ## How it Works
 
@@ -25,27 +44,6 @@ You can also select gregorian date using the same datepicker.
 The datetime field will also have a time picker.
 
 <img src="https://github.com/mustafaaloko/nova-persian-datepicker/blob/master/screenshots/persian-datepicker.png?raw=true">
-
-## Installation and Usage
-
-You may require this package using composer:
-
-```
-composer require aloko/nova-persian-datepicker
-```
-
-To use these fields, you add the following to your resource's `fields()` method:
-
-```php
-use Aloko\PersianDatepicker\PersianDate;
-use Aloko\PersianDatepicker\PersianDateTime;
-
-PersianDate::make('date_of_birth'), // For date fields
-PersianDateTime::make('check_in') // For datetime fields
-```
-
-
-**NOTE:** Please don't forget to cast your `date` and `datetime` fields in your model class as explained in [Attribute Casting](https://laravel.com/docs/eloquent-mutators#attribute-casting) in Laravel Docs, otherwise these fields will throw casting error.
 
 ## Methods
 
