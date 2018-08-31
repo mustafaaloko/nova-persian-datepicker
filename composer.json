@@ -1,0 +1,39 @@
+{
+    "name": "aloko/persian-datepicker",
+    "description": "Persian Datepicker for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "persian",
+        "datepicker",
+        "date",
+        "datetime"
+    ],
+    "authors": [
+        {
+            "name": "Mustafa Ehsan Alokozay",
+            "email": "mustafa.aloko@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aloko\\PersianDatepicker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aloko\\PersianDatepicker\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
