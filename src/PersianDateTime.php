@@ -51,7 +51,7 @@ class PersianDateTime extends Field
      *
      * @return $this
      */
-    public function nullable()
+    public function nullable($nullable = true, $values = null)
     {
         return $this->withMeta(['nullable' => true]);
     }
